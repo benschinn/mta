@@ -6,7 +6,21 @@
 ;; Views
 
 (defn home-page []
-  [:div [:h2 "mta"]])
+  [:main
+    [:h2 "Ministering to All"]
+    [:div 
+      [:form
+        [:label "First Name"][:br]
+        [:input {:type "text"}][:br]
+        [:label "Last Name"][:br]
+        [:input {:type "text"}][:br]
+        [:label "Date"][:br]
+        [:input {:type "date"}][:br]
+        [:label "Comment"][:br]
+        [:textarea {:cols "30" :rows "10"}][:br]
+        [:br]
+        [:input {:type "button" :value "Add"}]
+    ]]])
 
 ;; -------------------------
 ;; Initialize app
